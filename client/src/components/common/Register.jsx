@@ -49,28 +49,25 @@ const Register = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-dark navbar-dark">
         <Container fluid>
           <Navbar.Brand>
-            <Link to={'/'}>MediCareBook</Link>
+            <Link to="/" className="text-white text-decoration-none">DocSpot</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
+            <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+              {/* Optional additional links */}
             </Nav>
-            <Nav>
-              <Link to={'/'}>Home</Link>
-              <Link to={'/login'}>Login</Link>
-              <Link to={'/register'}>Register</Link>
+            <Nav className="d-flex gap-3">
+              <Link to="/" className="nav-link text-white">Home</Link>
+              <Link to="/login" className="nav-link text-white">Login</Link>
+              <Link to="/register" className="nav-link text-white">Register</Link>
             </Nav>
-
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
 
 
       <MDBContainer className="my-5">

@@ -161,7 +161,9 @@ const UserAppointments = () => {
                       <td><Button variant='link' onClick={() => handleDownload(appointment.document.path, appointment._id)}>{appointment.document.filename}</Button></td>
                       <td>{appointment.status}</td>
                       <td>{appointment.status === 'approved' ? <></> : <Button onClick={() => handleStatus(appointment.userInfo._id, appointment._id, 'approved')}>Approve</Button>}
+                    </td>
                     </tr>
+                    
                   );
                 })
               ) : (
