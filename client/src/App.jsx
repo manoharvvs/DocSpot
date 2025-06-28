@@ -16,7 +16,9 @@ function App() {
           return (
                     <div className="App">
                               <Router>
+
                                         <div className="content">
+                                                 
                                                   <Routes>
                                                             <Route path="/" element={<Home />} />
                                                             <Route path="/login" element={<Login />} />
@@ -33,8 +35,8 @@ function App() {
                                                             )}
                                                   </Routes>
                                         </div>
-                                        <footer className="bg-light text-center text-lg-start">
-                                                  <div className="text-center p-3">© 2023 Copyright: MediCareBook</div>
+                                        <footer className="bg-dark text-right text-lg-start text-white">
+                                                  <div className="text-center p-3">© 2025 Developed By KVVS Manohar, A.Vijay Durga,J.Durga Prasanna, D. Srinu </div>
                                         </footer>
                               </Router>
                     </div>
